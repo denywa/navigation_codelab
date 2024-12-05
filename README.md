@@ -1,16 +1,36 @@
-# navigation_codelab
+# Navigation Flutter
 
-A new Flutter project.
+Proyek Flutter ini menunjukkan struktur navigasi sederhana menggunakan named routes. Aplikasi ini terdiri dari tiga layar: first_screen, second_screen, dan third_screen. Pengguna dapat bernavigasi antar layar ini dengan menggunakan tombol dan bottom navigation bar.
 
-## Getting Started
+## Struktur Proyek
 
-This project is a starting point for a Flutter application.
+- **lib/main.dart**: Mengatur named routes dan initial route (rute awal).
+- **lib/first_screen.dart**: Berisi widget `FirstScreen` dengan navigasi ke Layar Kedua.
+- **lib/second_screen.dart**: Berisi widget `SecondScreen` dengan navigasi ke Layar Ketiga.
+- **lib/third_screen.dart**: Berisi widget `ThirdScreen` dengan navigasi kembali ke Layar Pertama.
 
-A few resources to get you started if this is your first Flutter project:
+## Fitur
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Named Routes**: Aplikasi menggunakan rute bernama untuk navigasi, yang diatur pada file `main.dart`.
+- **Bottom Navigation Bar**: Setiap layar memiliki bottom navigation bar untuk beralih antar layar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Layar
+
+- **first_screen**: Layar awal dengan tombol untuk bernavigasi ke Layar Kedua.
+- **second_screen**: Berisi tombol untuk bernavigasi ke Layar Ketiga.
+- **third_screen**: Berisi tombol untuk bernavigasi kembali ke Layar Pertama.
+
+## Navigasi
+
+- **first_screen**: 
+  - Tombol: Bernavigasi ke Layar Kedua.
+  - Bottom NavBar: Memungkinkan beralih ke Layar Kedua dan Ketiga.
+
+- **second_screen**:
+  - Tombol: Bernavigasi ke Layar Ketiga.
+  - Bottom NavBar: Memungkinkan beralih ke Layar Pertama dan Ketiga.
+
+- **third_screen**:
+  - Tombol: Bernavigasi kembali ke Layar Pertama.
+  - Bottom NavBar: Memungkinkan beralih ke Layar Pertama dan Kedua.
+
