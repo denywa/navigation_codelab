@@ -14,7 +14,7 @@ class FirstScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
+        currentIndex: 0, 
         onTap: (index) {
           switch (index) {
             case 0:
