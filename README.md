@@ -61,3 +61,10 @@ Proyek Flutter ini menunjukkan struktur navigasi sederhana menggunakan named rou
   - Tombol: Bernavigasi kembali ke Layar Pertama.
   - Bottom NavBar: Memungkinkan beralih ke Layar Pertama dan Kedua.
 
+## Pendekatan dan Tantangan
+
+### Pendekatan
+Dalam membangun aplikasi ini, saya memanfaatkan kode yang sudah diberikan di elearn untuk membuat tiap-tiap page dan navigasi antar halaman. selain itu saya juga menambahkan page ketiga dan named routes, saya dapat mengatur semua routesnya di satu tempat, yaitu di `main.dart`. Saya juga menambahkan bottom navigation bar di setiap layar dengan menggunakan logika switch case untuk berpindah halaman.
+
+### Tantangan
+Salah satu tantangan yang saya hadapi adalah menentukan `Navigator` yang sesuai untuk digunakan pada tombol third_screen dan bagian bottom navigation bar. Untuk mengatasi ini, saya menggunakan `Navigator.pushNamedAndRemoveUntil` untuk membersihkan stack saat berpindah layar melalui bottom navigation bar. 
